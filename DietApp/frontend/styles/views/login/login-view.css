@@ -1,0 +1,11 @@
+#login-view {
+display: grid;
+width: 20%;
+margin: auto;
+padding: 10px;
+}
+
+:host {
+display: block;
+padding: var(--lumo-space-m) var(--lumo-space-l);
+}
