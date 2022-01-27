@@ -29,7 +29,8 @@ import javax.annotation.security.PermitAll;
 @Route(value = "mainpage", layout = MainView.class)
 @RouteAlias(value = "")
 @PageTitle("MainPage")
-@JsModule("./src/views/MainPagee.js")
+@Tag("fixed-nav-sticky-footer-view")
+@JsModule("./src/views/fixed-nav-sticky-footer-view.js")
 public class MainPage extends PolymerTemplate<TemplateModel> {
 
     @Id("header")
