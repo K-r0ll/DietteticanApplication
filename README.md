@@ -22,7 +22,9 @@ The application is used to manage the menu and control the calories consumed. Th
 ## How to Install and Run the Project
 
 **1. Project**
-You need to clone this repository. Everything what you need to run project is including in maven dependency and project package. Project you can start by running **DietAppApplication.java** in src.main.java.pl.dietapp. Project wll be launched on **localhost:8082**
+
+You need to clone this repository. Everything what you need to run project is including in maven dependency and project package. Project you can start by running **DietAppApplication.java** in src.main.java.pl.dietapp. Project wll be launched on **localhost:8082**, but you need to configure the database before starting it (information in next step).
+
 
 If you have error during building the frontend try remove files below
 - node_modules,
@@ -37,7 +39,14 @@ npm install
 ```
 
 **2. Database **
-You need a database to use the system. I included the database in two text files **Init SQL** and **Data SQL**. First create a database using the **InitSQL.txt** schema and after creating the tables add data to it using **DataSQL.txt **scripts. I have included the database files in the **appDB** folder. You will also need information about database properties, you can also modify them for yourself in **resources / appliciation.properties**:
+
+You need a database to use the system. I included the database in one SQL files **createDB.sql** in **appDB** directory. Create a database using the **createDB.sql**. The safest and working option is to use PostgreSQL 14 for this. First create a database on your system and name it as you like (for example **dietdb**). Next step you must import **createDB.sql**, dont do this by pgAdmin. The only way that works is import using **psql**. Use the command below for import
+
+```bash
+psql -f "D:\PATH TO - > createDB.sql" -U username(probably postgres) -d database_name
+```
+
+You will also need information about database properties, which I present below, you can also modify them for yourself in **resources / appliciation.properties**:
 ```bash
 spring.datasource.url=jdbc:postgresql://localhost:5432/dietapp-db
 spring.datasource.username=postgres
