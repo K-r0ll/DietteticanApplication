@@ -38,7 +38,7 @@ And run this in terminal.
 npm install
 ```
 
-**2. Database **
+** 2. Database **
 
 You need a database to use the system. I included the database in one SQL files **createDB.sql** in **appDB** directory. Create a database using the **createDB.sql**. The safest and working option is to use PostgreSQL 14 for this. First create a database on your system and name it as you like (for example **dietdb**). Next step you must import **createDB.sql**, dont do this by pgAdmin. The only way that works is import using **psql**. Use the command below for import
 
