@@ -4,7 +4,7 @@ Application for managing meals in the diet.
 ## Table of Contents
 - [Technologies](#technologies)
 - [Project description](#project-description)
-
+- [How to Install and Run the Project](#how-to-install-and-run-the-project)
 
 ## Technologies
 Project is created with:
