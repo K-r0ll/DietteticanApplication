@@ -15,7 +15,7 @@ Project is created with:
 - Spring Data JDBC
 - PostgreSQL 14,
 
-## Project descriptoin
+## Project description
 
 The application is used to manage the menu and control the calories consumed. The system has a database of meals that the user can use. If you have your favorite dishes, you can add them to the database. When preparing a diet, you do not worry about how many calories are in a given dish, the system will calculate the proportion of weight for your caloric needs
 
