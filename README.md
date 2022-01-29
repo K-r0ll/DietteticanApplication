@@ -62,4 +62,4 @@ Dietician:
 - login: KarolDietician
 - password: diet
 
-## Scope of funciontalities
+## Scope of funcionalities
