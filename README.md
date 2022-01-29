@@ -3,6 +3,7 @@
 Application for managing meals in the diet.
 ## Table of Contents
 - [Technologies](#technologies)
+- [Project Description](#project-description)
 
 
 ## Technologies
