@@ -1,6 +1,9 @@
 # Diettetican App
 
 Application for managing meals in the diet.
+## Table of Contents
+- [Technologies](#technologies)
+
 
 ## Technologies
 Project is created with:
