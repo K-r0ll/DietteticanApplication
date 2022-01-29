@@ -65,18 +65,26 @@ Dietician:
 ## Scope of funcionalities
 
 The main functionalities of the project are:
-- Creating your dietary profile, containing information about your weight, caloric needs and BMI,
-- Composing a diet based on existing recipes,  or composing a diet for the user by a dietitian. The grammage of the recipes is calculated for each user depending on the caloric needs of their own profile,
-- Adding and editing new recipes and ingredients by the admin,
-- Adding new ingredients and recipes by the user, visible only to themselves, with the possibility of making available to the administrator for approval and visibility of the recipe for all,
-- Functionality of composing recipes for customers by a dietitian.
-- Functionality of creating a shopping list for a given period in PDF, and adding recipes to the favorites list.
+- :black_square_button: Creating your dietary profile, containing information about your weight, caloric needs and BMI,
+- :black_square_button: Composing a diet based on existing recipes,  or composing a diet for the user by a dietitian. The grammage of the recipes is calculated for each user depending on the caloric needs of their own profile,
+- :white_check_mark: Adding and editing new recipes and ingredients by the admin,
+- :black_square_button: Adding new ingredients and recipes by the user, visible only to themselves, with the possibility of making available to the administrator for approval and visibility of the recipe for all,
+- :black_square_button: Functionality of composing recipes for customers by a dietitian.
+- :black_square_button: Functionality of creating a shopping list for a given period in PDF, and adding recipes to the favorites list.
 
 Small supporting functionalities:
-- Dynamic search engine in the recipes and ingredient grid,
-- Dynamic preview of calories and macro ingredients while creating a recipe,
-- Adding new ingredients to the base during adding new recipe,
-- Replacing the ingredient with another of the same category during composing diet.
+- :white_check_mark: Dynamic search engine in the recipes and ingredient grid,
+- :white_check_mark: Dynamic preview of calories and macro ingredients while creating a recipe,
+- :white_check_mark: Adding new ingredients to the base during adding new recipe,
+- :black_square_button: Replacing the ingredient with another of the same category during composing diet.
+
+## Example of use
+
+Will continue this section during development
+
+## Status
+
+The current version only has extensive database management functionality
 
 
 
