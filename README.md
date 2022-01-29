@@ -63,3 +63,23 @@ Dietician:
 - password: diet
 
 ## Scope of funcionalities
+
+The main functionalities of the project are:
+- Creating your dietary profile, containing information about your weight, caloric needs and BMI,
+- Composing a diet based on existing recipes,  or composing a diet for the user by a dietitian. The grammage of the recipes is calculated for each user depending on the caloric needs of their own profile,
+- Adding and editing new recipes and ingredients by the admin,
+- Adding new ingredients and recipes by the user, visible only to themselves, with the possibility of making available to the administrator for approval and visibility of the recipe for all,
+- Functionality of composing recipes for customers by a dietitian.
+- Functionality of creating a shopping list for a given period in PDF, and adding recipes to the favorites list.
+
+Small supporting functionalities:
+- Dynamic search engine in the recipes and ingredient grid,
+- Dynamic preview of calories and macro ingredients while creating a recipe,
+- Adding new ingredients to the base during adding new recipe,
+- Replacing the ingredient with another of the same category during composing diet.
+
+
+
+
+
+
