@@ -6,6 +6,8 @@ Application for managing meals in the diet.
 - [Project description](#project-description)
 - [How to Install and Run the Project](#how-to-install-and-run-the-project)
 - [Scope of funcionalities](#scope-of-funcionalities)
+- [Example of use](#example-of-use)
+- [Status](#status)
 ## Technologies
 Project is created with:
 - Java 16,
