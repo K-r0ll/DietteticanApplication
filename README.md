@@ -70,7 +70,8 @@ The main functionalities of the project are:
 - :white_check_mark: Adding and editing new recipes and ingredients by the admin,
 - :black_square_button: Adding new ingredients and recipes by the user, visible only to themselves, with the possibility of making available to the administrator for approval and visibility of the recipe for all,
 - :black_square_button: Functionality of composing recipes for customers by a dietitian.
-- :black_square_button: Functionality of creating a shopping list for a given period in PDF, and adding recipes to the favorites list.
+- :black_square_button: Functionality of creating a shopping list for a given period in PDF, and adding recipes to the favorites list,
+- :black_square_button: Logging and authentication system.
 
 Small supporting functionalities:
 - :white_check_mark: Dynamic search engine in the recipes and ingredient grid,
