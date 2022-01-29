@@ -87,7 +87,7 @@ public class AuthService {
             routes.add(new AuthorizedRoute("pulpit", "Pulpit","la la-marker", PulpitGłównyView.class));
             routes.add(new AuthorizedRoute("twojadieta", "Twoja Dieta","la la-pizza-slice", TwojaDietaView.class));
             routes.add(new AuthorizedRoute("listazakupowa", "Lista Zakupowa","la la-shopping-cart", ListaZakupowaView.class));
-            routes.add(new AuthorizedRoute("bazaprzepisow", "Bazaprzepisow","la la-database", BazaPrzepisowView.class));
+            routes.add(new AuthorizedRoute("bazaprzepisow", "Baza Przepisów","la la-database", BazaPrzepisowView.class));
             routes.add(new AuthorizedRoute("ulubioneprzepisy", "Ulubione Przepisy","la la-th-list", UlubionePrzepisyView.class));
             routes.add(new AuthorizedRoute("mojedane", "Moje Dane","la la-user", MojeDaneView.class));
 
@@ -97,7 +97,7 @@ public class AuthService {
             routes.add(new AuthorizedRoute("pulpit", "Pulpit","la la-marker", PulpitGłównyView.class));
             routes.add(new AuthorizedRoute("twojadieta", "Twoja Dieta","la la-pizza-slice", TwojaDietaView.class));
             routes.add(new AuthorizedRoute("listazakupowa", "Lista Zakupowa","la la-shopping-cart", ListaZakupowaView.class));
-            routes.add(new AuthorizedRoute("bazaprzepisow", "Bazaprzepisow","la la-database", BazaPrzepisowView.class));
+            routes.add(new AuthorizedRoute("bazaprzepisow", "Baza Przepisów","la la-database", BazaPrzepisowView.class));
             routes.add(new AuthorizedRoute("ulubioneprzepisy", "Ulubione Przepisy","la la-th-list", UlubionePrzepisyView.class));
             routes.add(new AuthorizedRoute("mojedane", "Moje Dane","la la-user", MojeDaneView.class));
 

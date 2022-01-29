@@ -1,5 +1,7 @@
 package pl.dietapp.backend.model;
 
+import pl.dietapp.backend.recipe.Ingredient;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -95,5 +97,26 @@ public class Recipe {
 
     public void setRecipeShortDescription(String recipeShortDescription) {
         this.recipeShortDescription = recipeShortDescription;
+    }
+    public StringBuilder getIngredientListDescription() {
+        StringBuilder ingredientList1 = new StringBuilder();
+        for (RecipeIngredient ingredient : recipeIngredientList) {
+            ingredientList1.append(ingredient.getIngredientName()).append(" Ilość: ").append(ingredient.getQtyAmount()).append(" gram").append("\n");
+        }
+        return ingredientList1;
+    }
+
+    @Override
+    public String toString() {
+        return "Recipe{" +
+                "id=" + id +
+                ", categoryId=" + categoryId +
+                ", category='" + category + '\'' +
+                ", recipeName='" + recipeName + '\'' +
+                ", recipeDescription='" + recipeDescription + '\'' +
+                ", kcal=" + kcal +
+                ", recipeShortDescription='" + recipeShortDescription + '\'' +
+                ", recipeIngredientList=" + recipeIngredientList +
+                '}';
     }
 }

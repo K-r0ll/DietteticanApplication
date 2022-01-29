@@ -349,7 +349,7 @@ public class BazaPrzepisowView extends VerticalLayout {
             kcalRecipe.setValue(String.valueOf(recipe.getKcal()));
             shortDescription.setValue(recipe.getRecipeShortDescription());
             descriptionRecipe.setValue(recipe.getRecipeDescription());
-            skladnikiRecipe.setValue(recipe.getIngredList().toString());
+            skladnikiRecipe.setValue(String.valueOf(recipe.getIngredientListDescription()));
 
 
         }
@@ -454,10 +454,11 @@ public class BazaPrzepisowView extends VerticalLayout {
         });
         Button addButton = new Button("Dodaj", e-> {
             ingredientRepository.addSinglIngr(ingredientFieldView.getIngredient().getValue(), ingredientFieldView.getKcal().getValue(), ingredientFieldView.getProtein().getValue(), ingredientFieldView.getCarbo().getValue(), ingredientFieldView.getFat().getValue());
+            getDialogIngredientData(ingredientDialogGrid);
             getDialogIngredientData(ingredientMainGrid);
             dynamicSearchInDialogIngr();
-
             ingredientFieldView.clearIngredientFields();
+            dialog.close();
         });
         addButton.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
         HorizontalLayout buttonLayout = new HorizontalLayout(searchField, cancelButton, addButton);
