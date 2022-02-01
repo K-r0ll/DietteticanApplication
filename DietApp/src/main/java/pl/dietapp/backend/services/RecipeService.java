@@ -12,7 +12,7 @@ public class RecipeService {
 
 
 public float getKcalRecipe(Recipe recipe) {
-    return (float) recipe.getIngredList().stream().mapToDouble( ingred-> ingred.getKcalPer100()).sum();
+    return (float) recipe.getIngredList().stream().mapToDouble( ingred-> ingred.getKcalIngredient()).sum();
 }
 public Recipe createRecipe(int categoryId, String recipeName, String recipeDescription, String recipeShortDescription, List<RecipeIngredient> recipeIngredientList) {
     Recipe recipe = new Recipe( categoryId, recipeName, recipeDescription, recipeShortDescription);

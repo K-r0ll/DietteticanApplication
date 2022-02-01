@@ -131,6 +131,10 @@ public class RecipeIngredient {
 
     public double getKcalPer100() {
 
+        return DoubleRounder.round(kcalPer100, 0);
+    }
+    public double getKcalIngredient() {
+
         return DoubleRounder.round(kcalPer100*qtyAmount/100, 0);
     }
 
@@ -139,6 +143,9 @@ public class RecipeIngredient {
     }
 
     public double getProteinPer100() {
+        return DoubleRounder.round(proteinPer100, 0);
+    }
+    public double getProteinIngredient() {
         return DoubleRounder.round(proteinPer100*qtyAmount/100, 0);
     }
 
@@ -147,6 +154,9 @@ public class RecipeIngredient {
     }
 
     public double getCarbohydratesPer100() {
+        return DoubleRounder.round(carbohydratesPer100, 0);
+    }
+    public double getCarbohydratesIngredient() {
         return DoubleRounder.round(carbohydratesPer100*qtyAmount/100, 0);
     }
 
@@ -155,6 +165,9 @@ public class RecipeIngredient {
     }
 
     public double getFatPer100() {
+        return DoubleRounder.round(fatPer100, 0);
+    }
+    public double getFatIngredient() {
         return DoubleRounder.round(fatPer100*qtyAmount/100, 0);
     }
 

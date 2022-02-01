@@ -168,10 +168,10 @@ public class RecipeForm extends Div {
     private void addColumnMainGrid(Grid<RecipeIngredient> grid) {
         recipeNameColumn = grid.addColumn(RecipeIngredient::getIngredientName).setSortable(true).setHeader("Składnik").setAutoWidth(true);
         recipeIlosc = grid.addColumn(RecipeIngredient::getAmountMeasure).setSortable(true).setHeader("Ilość");
-        recipeKcal = grid.addColumn(RecipeIngredient::getKcalPer100).setSortable(true).setHeader("Kalorie");
-        recipeCarbo = grid.addColumn(RecipeIngredient::getCarbohydratesPer100).setSortable(true).setHeader("Węglowodany");
-        recipeProtein = grid.addColumn(RecipeIngredient::getProteinPer100).setSortable(true).setHeader("Białko");
-        recipeFat = grid.addColumn(RecipeIngredient::getFatPer100).setSortable(true).setHeader("Tłuszcz");
+        recipeKcal = grid.addColumn(RecipeIngredient::getKcalIngredient).setSortable(true).setHeader("Kalorie");
+        recipeCarbo = grid.addColumn(RecipeIngredient::getCarbohydratesIngredient).setSortable(true).setHeader("Węglowodany");
+        recipeProtein = grid.addColumn(RecipeIngredient::getProteinIngredient).setSortable(true).setHeader("Białko");
+        recipeFat = grid.addColumn(RecipeIngredient::getFatIngredient).setSortable(true).setHeader("Tłuszcz");
         grid.addColumn(
                 new ComponentRenderer<>(Button::new, (button, Ingred) -> {
                     button.addThemeVariants(ButtonVariant.LUMO_ICON,
@@ -236,10 +236,10 @@ public class RecipeForm extends Div {
         ingredientFieldView = new IngredientFieldView();
         ingredientFieldView.onlyReadableFields(true);
         ingredientFieldView.getIngredient().setValue(recipeIngredient.getIngredientName());
-        ingredientFieldView.getCarbo().setValue(recipeIngredient.getCarbohydratesPer100());
-        ingredientFieldView.getFat().setValue(recipeIngredient.getFatPer100());
-        ingredientFieldView.getKcal().setValue(recipeIngredient.getKcalPer100());
-        ingredientFieldView.getProtein().setValue(recipeIngredient.getProteinPer100());
+        ingredientFieldView.getCarbo().setValue(recipeIngredient.getCarbohydratesIngredient());
+        ingredientFieldView.getFat().setValue(recipeIngredient.getFatIngredient());
+        ingredientFieldView.getKcal().setValue(recipeIngredient.getKcalIngredient());
+        ingredientFieldView.getProtein().setValue(recipeIngredient.getProteinIngredient());
         dialog.getElement().setProperty("noCloseOnEsc", true).setProperty("noCloseOnOutsideClick", true);
         searchField = new TextField();
         ingredAddingGrid = new Grid<>();
@@ -301,10 +301,10 @@ public class RecipeForm extends Div {
 
     }
     private void setKFCPvariable() {
-        recipe_kcal.setValue(recipeIngredientList.stream().mapToDouble(RecipeIngredient::getKcalPer100).sum());
-        recipe_fat.setValue(recipeIngredientList.stream().mapToDouble(RecipeIngredient::getFatPer100).sum());
-        recipe_carbo.setValue(recipeIngredientList.stream().mapToDouble(RecipeIngredient::getCarbohydratesPer100).sum());
-        recipe_protein.setValue(recipeIngredientList.stream().mapToDouble(RecipeIngredient::getProteinPer100).sum());
+        recipe_kcal.setValue(recipeIngredientList.stream().mapToDouble(RecipeIngredient::getKcalIngredient).sum());
+        recipe_fat.setValue(recipeIngredientList.stream().mapToDouble(RecipeIngredient::getFatIngredient).sum());
+        recipe_carbo.setValue(recipeIngredientList.stream().mapToDouble(RecipeIngredient::getCarbohydratesIngredient).sum());
+        recipe_protein.setValue(recipeIngredientList.stream().mapToDouble(RecipeIngredient::getProteinIngredient).sum());
     }
     private Button exitButton(Dialog dialog) {
         Button exitButton = new Button("Wyjdź", e -> {
@@ -448,10 +448,10 @@ public class RecipeForm extends Div {
     }
     private void refreshAll(RecipeIngredient recipeIngredient) {
 
-        ingredientFieldView.getProtein().setValue(DoubleRounder.round(recipeIngredient.getProteinPer100()*(amount.getValue()/ recipeIngredient.getQtyAmount()),0));
-        ingredientFieldView.getKcal().setValue(DoubleRounder.round(recipeIngredient.getKcalPer100()*(amount.getValue()/ recipeIngredient.getQtyAmount()),0));
-        ingredientFieldView.getFat().setValue(DoubleRounder.round(recipeIngredient.getFatPer100()*(amount.getValue()/ recipeIngredient.getQtyAmount()),0));
-        ingredientFieldView.getCarbo().setValue(DoubleRounder.round(recipeIngredient.getCarbohydratesPer100()*(amount.getValue()/ recipeIngredient.getQtyAmount()),0));
+        ingredientFieldView.getProtein().setValue(DoubleRounder.round(recipeIngredient.getProteinIngredient()*(amount.getValue()/ recipeIngredient.getQtyAmount()),0));
+        ingredientFieldView.getKcal().setValue(DoubleRounder.round(recipeIngredient.getKcalIngredient()*(amount.getValue()/ recipeIngredient.getQtyAmount()),0));
+        ingredientFieldView.getFat().setValue(DoubleRounder.round(recipeIngredient.getFatIngredient()*(amount.getValue()/ recipeIngredient.getQtyAmount()),0));
+        ingredientFieldView.getCarbo().setValue(DoubleRounder.round(recipeIngredient.getCarbohydratesIngredient()*(amount.getValue()/ recipeIngredient.getQtyAmount()),0));
     }
 
     public void addNewRecipe() {
