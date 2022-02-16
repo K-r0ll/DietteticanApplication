@@ -20,11 +20,10 @@ Project is created with:
 
 ## Screenshots
 
-![MainPage](./img/ss1.png)
-![Login](./img/ss2.png)
-![DBManagment](./img/ss3.png)
-![RecipeManagment](./img/ss4.png)
-![MyProfile](./img/ss5.png)
+<img src="./img/ss1.png" width="500"> <img src="./img/ss2.png" width="500">
+<img src="./img/ss3.png" width="500"> <img src="./img/ss4.png" width="500">
+<img src="./img/ss5.png" width="500">
+
 ## Project description
 
 The application is used to manage the menu, you can schedule for a specific time. The system has a database of meals that the user can use. If you have your favorite dishes, you can add them to the database. When preparing a diet, you do not worry about how many calories are in a given dish, the system will calculate the proportion of weight for your caloric needs. The system also has the option to generate a shopping list to PDF and the ability to preview your favorite dishes. The application also has a functionality for dietitians, which is used to arrange diets for its patients who are registered in the system
